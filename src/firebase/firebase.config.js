@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBAprN42HOQceb-KtnzjBSm3UXvoJsJjcA",
-  authDomain: "jewelry-shop-742ba.firebaseapp.com",
-  projectId: "jewelry-shop-742ba",
-  storageBucket: "jewelry-shop-742ba.appspot.com",
-  messagingSenderId: "15445135740",
-  appId: "1:15445135740:web:69b8d6caab9e1d495b14f9"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId
 };
 
 // Initialize Firebase
