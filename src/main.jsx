@@ -12,6 +12,7 @@ import Login from './components/Login';
 import Register from './components/Register';
 import ErrorPage from './components/ErrorPage';
 import Home from './components/Home';
+import AllJewelry from './components/AllJewelry';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register></Register>
+      },
+      {
+        path: '/alljewelry',
+        element: <AllJewelry></AllJewelry>
       }
     ]
   },
