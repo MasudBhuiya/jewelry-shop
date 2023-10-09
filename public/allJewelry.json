@@ -1,0 +1,57 @@
+ [
+    {
+      "name": "Diamond Solitaire Ring",
+     "sellerName": "Elegant Jewels",
+      "category": "Rings",
+      "price": 2500,
+      "quantity": 5,
+      "details": "A stunning 1-carat diamond solitaire ring set in 18k white gold. It comes with a GIA certificate of authenticity.",
+      "image": "https://media.istockphoto.com/id/1337979277/photo/set-of-diamond-gemstone-beautiful-wedding-engagement-rings.jpg?s=612x612&w=0&k=20&c=4TaI6_0SOgvq-uLxjdYSB5OhlDFPFlcfvyazg2tNIs0="
+    },
+    {
+      "name": "Sapphire and Diamond Necklace",
+      "sellerName": "Glamour Gems",
+      "category": "Necklaces",
+      "price": 3500,
+      "quantity": 3,
+     "details": "A beautiful necklace featuring a 2-carat sapphire surrounded by brilliant-cut diamonds, set in 14k yellow gold.",
+     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjPZyaUo3NuUdMOV8l79cof-rhRxPBg5GkHG47fuTH7yG8OhyjVunRYsWgdwTXSw7XCnA&usqp=CAU"
+    },
+    {
+      "name": "Emerald Stud Earrings",
+      "sellerName": "Gleaming Accessories",
+      "category": "Earrings",
+      "price": 1200,
+      "quantity": 7,
+      "details": "Elegant emerald stud earrings with a total of 1.5 carats of emeralds, set in 18k rose gold.",
+      "image": "https://i.etsystatic.com/35222781/r/il/24cf35/4796046110/il_600x600.4796046110_gjc1.jpg"
+    },
+    {
+      "name": "Pearl Bracelet",
+      "sellerName": "Pearl Paradise",
+      "category": "Bracelets",
+      "price": 800,
+      "quantity": 10,
+     "details": "A classic pearl bracelet featuring freshwater pearls with a sterling silver clasp.",
+     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6U5aYSEdHRT7APfVQ4T_F37UZagqik2u-q2I695RqZOPQm5lDhl47H5dPedx40RLbA3k&usqp=CAU"
+    },
+    {
+      "name": "Men's Titanium Band",
+      "sellerName": "Macho Rings",
+      "category": "Rings",
+      "price": 300,
+      "quantity": 15,
+      "details": "A durable and stylish men's titanium wedding band with a matte finish.",
+      "image": "https://www.titaniumrings.com/cdn/shop/collections/mens-classic-506_1f133107-74ca-498f-8170-aeca06802319_877x.jpg?v=1462855068"
+    },
+    {
+      "name": "Ruby Heart Pendant",
+      "sellerName": "Royal Jewels",
+      "category": "Pendants",
+      "price": 1800,
+      "quantity": 4,
+     "details": "A romantic heart-shaped pendant with a 1.2-carat ruby and diamond accents, set in 18k white gold.",
+     "image": "https://i.etsystatic.com/11980081/c/2471/2471/200/0/il/b75625/5137260663/il_600x600.5137260663_sfax.jpg"
+    }
+  ]
+  
