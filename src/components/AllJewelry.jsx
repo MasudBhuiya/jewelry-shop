@@ -5,7 +5,7 @@ const AllJewelry = () => {
     const [items, setItems] = useState([]);
 
     useEffect(()=>{
-        fetch("../../public/allJewelry.json")
+        fetch("http://localhost:5000/jewelry")
         // fetch(`http://localhost:5000/toys?sort=${asc ? 'asc': 'desc'}&limit=${20}`)
         .then(res => res.json())
         .then(data => {

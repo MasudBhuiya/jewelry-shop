@@ -13,6 +13,7 @@ import Register from './components/Register';
 import ErrorPage from './components/ErrorPage';
 import Home from './components/Home';
 import AllJewelry from './components/AllJewelry';
+import AddJewelry from './AddJewelry';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: '/alljewelry',
         element: <AllJewelry></AllJewelry>
+      },
+      {
+        path: '/addjewelry',
+        element: <AddJewelry></AddJewelry>
       }
     ]
   },
