@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 // import SocialLogin from "../pages/Shared/Social/SocialLogin";
 import Swal from "sweetalert2";
 import { AuthContext } from "./Provider/AuthProvider";
+import SocialLogin from "./SocialLogin";
 // import useTitle from "../Hooks/useTitle";
 
 const Register = () => {
@@ -81,7 +82,7 @@ const Register = () => {
         </form>
         <h1>Already have an account? <Link className='text-orange-500 font-bold' to='/login'>Login</Link></h1>
         <p className="text-red-600">{error}</p>
-        {/* <SocialLogin></SocialLogin> */}
+        <SocialLogin></SocialLogin>
       </div>
     </div>
   </div>
