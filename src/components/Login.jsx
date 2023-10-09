@@ -4,8 +4,9 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 // import SocialLogin from "../../Shared/SocialLogin/SocialLogin";
 import { useForm } from "react-hook-form";
+import { AuthContext } from "./Provider/AuthProvider";
+import SocialLogin from "./SocialLogin";
 // import useTitle from "../../Shared/useTitle";
-import { Authcontext } from "./Provider/AuthProvider";
 
 const Login = () => {
   const { register, handleSubmit,  formState: { errors } } = useForm();
@@ -14,7 +15,7 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation()
 
-  const {login} = useContext(Authcontext)
+  const {login} = useContext(AuthContext);
 //   useTitle('Login')
   const onSubmit = data => {
     console.log(data);
@@ -62,7 +63,6 @@ const Login = () => {
           required: true, 
           minLength: 6,
           maxLength: 20,
-          pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])/
           })} placeholder="password" className="input input-bordered" />
         {errors.password?.type === 'required' && <span className="text-red-600">Password is required!!!</span>}
         <p className="mt-3" onClick={()=>setShow(!show)}>
@@ -77,7 +77,7 @@ const Login = () => {
       </div>
     </form>
     <p className='text-center mt-5 mb-5'>New Here?<Link to='/register' className='btn btn-link'>Create an account</Link></p>
-    {/* <SocialLogin></SocialLogin> */}
+    <SocialLogin></SocialLogin>
   </div>
 </div>
 </div>

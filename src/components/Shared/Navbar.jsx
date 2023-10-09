@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../Provider/AuthProvider';
 
 const Navbar = () => {
-    const user = "hello"
+  const {logOut, user} = useContext(AuthContext);
+    // const user = "hello"
+    const handleLogout = ()=>{
+      logOut()
+      .then(()=>{
+      })
+      .catch(err => {
+        console.log(err) 
+      })
+    }
     const navItems = <>
     <li><Link to='/'>Home</Link></li>
     <li><Link to='/alljewelry'>All jewelry</Link></li>
@@ -10,11 +20,6 @@ const Navbar = () => {
     <li><Link to='/alltoys'>Add jewelry</Link></li>
     <li><Link to='/alltoys'>Blogs</Link></li>
     
-    {/* {
-      user && <>
-      <li><Link to='/addtoys'>Add a Toy</Link></li><li><Link to='/mytoys'>My Toys</Link></li>
-      </>
-    } */}
   </>
     return (
         <div className="navbar bg-base-100 h-20">
@@ -40,9 +45,9 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    {/* {user ? <><img title={user.displayName} className="w-10 h-10 rounded-3xl mr-4" src={user.photoURL
-} alt="" /><button className="btn btn-secondary" onClick={handleLogout}>LogOut</button></> : <button className="btn btn-secondary"><Link to='/login'>Login</Link></button>} */}
-{user? <button className='btn btn-primary'>Logout</button>: <button className='btn btn-primary'>Login</button>}
+    {user ? <><img title={user.displayName} className="w-10 h-10 rounded-3xl mr-4" src={user.photoURL
+} alt="" /><button className="btn btn-secondary" onClick={handleLogout}>LogOut</button></> : <button className="btn btn-secondary"><Link to='/login'>Login</Link></button>}
+{/* {user? <button className='btn btn-primary'>Logout</button>: <button className='btn btn-primary'>Login</button>} */}
   </div>
 </div> 
     );
